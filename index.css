@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet&display=swap');
+
+* {
+    font-family: 'Hahmlet', serif;
+}
+
+.mytitle {
+    height: 250px;
+    color: black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+
+    background-image: url('https://i.pinimg.com/originals/22/4e/69/224e694ee3a37f176cd039a672027e21.jpg');
+    background-size: cover;
+}
+
+.mytitle>button {
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.mycards {
+    width: 1200px;
+    margin: 30px auto 0px auto;
+}
+
+.mypostingbox {
+    width: 500px;
+    margin: 30px auto 0px auto;
+    padding: 20px;
+    box-shadow: 0px 0px 3px 0px blue;
+    border-radius: 5px;
+}
+
+.mybutton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.mybutton>button {
+    margin-right: 5px;
+}
+
+.modified-accordion .card-header {
+    position: relative;
+}
+
+.modified-accordion .card-header:after {
+    content: '테스트용 문구';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.modified-accordion .collapse:not(.show) {
+    display: block;
+}
+
+.product-card-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text100 {
+    padding-left: 100px;
+}
+
+.text-shadow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
