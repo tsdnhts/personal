@@ -86,7 +86,6 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-            width :"1450px"; height :"350px"
         }
 
         .text100 {
@@ -193,6 +192,22 @@
     </div>
     <div id="accordion">
         <div class="card">
+            <div class="row">
+                <div class="columns">
+                  <ul class="accordion" data-accordion data-multi-expand="true">
+                    <li class="accordion-item is-active" data-accordion-item>
+                        <a href="#" class="accordion-title">패널 제목</a>
+                        <div class="accordion-content" data-tab-content >
+                          <p>패널 내용</p>
+                        </div>
+                      </li>
+                      <li class="accordion-item is-active" data-accordion-item>
+                        <a href="#" class="accordion-title">패널 제목</a>
+                        <div class="accordion-content" data-tab-content >
+                          <img src = "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png";>
+                          <p>패널 내용</p>
+                        </div>
+                      </li>
             <div class="card-header" id="heading1">
                 <button class="btn btn-default" data-toggle="collapse" data-target="#body1" aria-expanded="true"
                     aria-controls="body1">
@@ -204,8 +219,9 @@
                 <div class="product-card-body">
                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAABcVBMVEX////+0gDu7u4rw/hAQEL19fXCwsLr6+s8PDze3t6vr6+dnZ0jw/sdqMz5+fnHx8eHmaHl5eU2NjYWwv/Nzc1NxOnQzW/30w3/1gCM2vsxMTGQkJAoKCgktuKFhYVNTU1Uy/nR7/25zI/o9P65ubn00S9WVlZra2sSEhL0+P8AAADVz2N8x8x7e3umpqa/zIfu0T3+88/++OL/3QD+2Ej+/PL+5Iv87bT96Jz/1Cj98MT832/96qn+4oAYJ0c0OET+2lopMUTjtwD2xgDAoCWlizC0lyfVsCKEcTYKIkhxYjoAFEhlWj5NR0FUTkDgwkm4qnqLkJ/YvVjFrm+gnI6upYaQfDbh0E2KyL11n7wVHzaIpLPO4tCMo59BNRqo4vthhJWv0eNdstWijEzNtmi7vbDa1MK3o1iVzuKZeQB+fVeHo4qvrGRqjXUYp9xppKqPnnmOl2NwnZKlm0J4gmpFmbw5gZsAp+quvsxfjZMARGpYGItzAAANS0lEQVR4nO2cjV/aSBrHh0ASJqGJgWlJCcSyjARtk1PRVu3L1ld2u3una3Vbz7tztd3uW49ed0vbvb/+ZiaAMSQitBK8T37tBwOTwHzzPPPMMy8AQKxYsWLFihUrVqxYsWLFihUrVqxYsWLFcjU/d+/B0t27d5eWlu6tzEddm+E1f+/+wsIyUcIVOVpYuP9gLup6Da6V+4lQPb4Xde0G0OJ5JG2elcWoa3khzS8t90NhTnd3ftx5FucuhsL0cG6scQZBobo7vtFg/sHCQCjU2ZbGNFz3b/ZBGsvQtrg0NQwLiwRR192v+cfDoTDjjFnLmRus4fu1EnX9vXrwSShES1ETnGrpU1kSiftRM7S1ePfTWQjNWHSgi5/BLlQPx4Dmc7GMBc2DT4tjXt2Nmube52NJLD+IlmVuyG4/hCbS/ubi/X69Xtf1vmctRJjZXLDx6/XE2sbm5lajXu93aoRBYKUfhZ5fXs/nG1+tfv1odXX169XNfD+ayHLoxfMbjJ7fePLom28ePXr0Zaqt1c1+MImoHK1Pz9/46pSirS+/bfRrOBHlNfPn22UjtZrqVX/TRDMeOD+STf3VbxZmmr9t9DPNQhQsc+cbZvNRAAtztH6miSIGnG+Y+pMgJ6Mx4Mn6+JmmT1iufxvgZdlCmtBsjZ9pQg2j68vMMj0whZplTqZTq1/162wej5plPqyP2d6RdwhNfdPnZoWiyQHFKaS+fNIPZnnUpgntY7aN73ZpwNrwBoB0Om1w5CrNyqYukAY8HC3LYpiXLT/d29+mMPlTN8tmJ03ILsO1VOpR33CWeDzaNGDF42WdEU1+dvbZ7FN5dpmV5b+nfpYupNOpqoncq3izSF6b6ps9j3hgc+pl+vbOtlu7Z8/v3Nk/uPOsXdBYTaWzluFIGHYvQzZp/xcYzo3Uzxa708rLu/s7sktz+3ry4LB0/Uan5MnqpAx9F4r23/tG5sSI/WyuM90/tbO3m9g1WJO/ff1wopTpwugbq7IiYsdxfUxwHIEHipz2pZq3bwTpH2Wvpi8V5l67JrP7+9uk2oxGv/3Pw2SyC6NvfV9FwKxalsMuMSxrUgJA/tfmmgclf+d6oG6d1dFlwtAR5uzs7O7e/iyr07b8sj61c5jMnMJsVdAPEHDa8bHCLuG5cplYZuIHTfI0mue5TLCSXmWS5ctjWXxI6nE9cyCfJP/iVmrbeLozQT70FGYPaIdlcERqcVwGigLKR5Xy0XTlSOWnPa0ml7yYbl4eDJvHSE4YpUzmi7ZTze7t3LjuhfnONFRSe8l0QLl8fFw+NCWgHB3xgoW29HGCoQsYs8ZEhlTli061lkkAOGMZnjSWMtCcGVA5+nhY1sw0AJWyaOHpQJjSzZu3IoFZIW1+74D5dRcmcRZGfzGNUZk4GayC6TJ0ykCwAT1CCHs63DZMqXTtWnm6Eo5ziTAkmL1suJ8SBpNoIAVpZdL4OWIPXjomIYBaBkGwn/fDEBQCU6lMl28xsrO6ZBi6tqR3YJa/YHrmg0n8BBGs0C6CEGDpmMaj6XIFoR+9uVmuy0JhKtNH5Ok1n0qXC8Pm/jows7dIeM2RsOaDSezuqKBSIX1eBWGosN6vIu4/PZNn+mAqlZujdjN3dakL4zL0wiTWnopAqVTaV9EbD141zg6ac12WNsyR182igrkVAKM3Xvmu5J4mEufDlL1uNk4wpN2I5HQFY4gMlnK+8s8BemB+nm7DRO9mwTDr+ySEAU4yZUSTGu4X/1DGA3PtpDzeMPraj8rpddyLnmEZCwBdt/q5Mu0NALmRwCxdFCZRX9vjO5fxdu+MWY7WuNSlOWEdjRuN3ceS23IuHSZHxUIzEYOhB2dhEvUtSWM4HJSk9Z6pDE+n2e1TXIzSiGDcDRlkkEx0IzHFDp7fYMNmcnD7LMwGhxEkQgIQGuu6b/msk854WZJuTC55n1xuOkMGmUzLnYN8It856LYYUvP1X8hYGRFxJE379bfXjbWE3gvDkjNvvzK6ANB3xawNsrbx+rd//3h6GW7mmtfe/KexXu/yjMEQYKXfBEtdX2u8/f3kWjPTPOjOaUhNUqsM5fljrUMzBjBz525f1OuJjXetUqk9+m05LDpzE6X2WDiTKbVerLmNZwxgFs/ZwKjr65utUtIzii+1DCwdtjxVI4WtzXVK8zx3IZxcpX+lhtZ5q5lb73MZX138zxnPD402TZB8ExqXOJ9x3ma5qXcfLug5yeaLPJuUDtLStEdK/wp9isIajd54f9FWQGn+sx4y7TzSRY354Eajr7X6I3iUexdi39EuAwQ2Gn39z4FYkskPG8EbUEa7QBO8M+vtAD5GlUm+D3S0/GiXNIK2M+mN5oCGSeYym0GmGfXmpl4/0xNvQuaNQ0UM2UoEmGbUW056dmWv/7Q3MYx2egc5I1+g7Vk6f4l47kLiu+exA9i7/2T0uxru+Wqwe1EYn3rmOCLZfr7weWCELX8IWB49i880+rAwH38dA8P4TbP5cSgY8eOfa2f9LArD+PZorf06JMzhNV8EiGiXpidB03ffDwejHTTfnoF5HAmKgOdP+5r1tx+Oh7PM+9zvZ3qaaHY1Ogh1Y4A+9aZ5PAwLJ7aSb7yNJpId9EiWIGKrzsw8283SoTYMjNZKehvNiLcAuVIkzrIRzTfdirzOJQ/hECw8aiWbr7swy5E4mYI1rCEAVPsPOumX/zOZORkKRm3SAWfEkUx2sKgCUUW7tBI0+T9Aoa4EoRhW9jGXzPze2YAS0dfoFKxQGCjhl7QWf3zIZFphKQDCEhbCzOaUkplOBIjqWw2KwGMRAeg4r0gQ0N/RkUkIDJR4ADQpJDzQvUMtd4vX/ai+BqAIxDJ0pR8q84TmxclJsxXsZrzMZoogCvQ0/iCTzDR3I2UhvYxqYEeQMWLbgjY0iCbUEBj3AhxoGv49GTw3X0fLggSI6D8kcHS2dmuavBRiGYNdwAnBlqEwHwjM4wi/PKdq7QOBTvIv7ivhjuRu0cTBqFrzVibz4e16pF9rRGL7QGVVRYRNU0PiryOQPhYHmw399/2h8/Hlg0i/1OiDETF1pJCAxSPZgcGRjhfYeqcghn7QKOSD4SXyEAbjncPwF7j7N7EW8jGjkQ8GQIE2nzCYULWjA/LvGB6t/DA8+YuHgHHjNocuedXifPlhAKciZ2gYgPnATxmRemAAD+Wh3Qz07EwfqXphyO2F/KBSaADQMEZSlAEtCAY50qAiXRAQEVSBLDrRgLCKB8EIcEBpNDtQVTIqUoGBoyEBwTAiGtTLAOYAwmS4gwUOs74qCiFTdlwZnQPHkQ15UJmmY2LHwdiaxLL3rYTRxWoFQaXThJXTG60E3v5zA4DSvkgB3ssVke4bGpXQMJMXAwjGMDHM/x3MwG19IGmjhBEk4VJFBqajg+HFS1akWXSsWLFixRpbyVb7hww02bRt06FDN9X0qv07B0C1bRT6NmMhoVYoWhRATqULhUI2nZYBXyx45BYDANPFQjraWdl+Morp7KRK/lIOquyMAGfSHmWzrj1U8mptvE3ThkEpwpIllslmiwZIF8nfrEuSpT/YQqXWrgqMQVlsARvVdAEBDmPsVMlLkwLGQjvrujowZiGdTdGZfU5oT96IFnmp6jnzSsGQpu9dp9CuLoxDW0jBclA3k7/CMGKVmqZQnDSFdsEVhgEoXWTRq5hqr1lcZRgArVoxy3DcKeQrDUOXa7I1glNIsYKrDUOF04RmhnWSPTDClYFROJFNfDuk5cywnuYURsMqiXE8OTNdjHZdtp86obk4Y0NNRIQgPcOyyS4MStVmbAQdUpK9EommYhXThVo6VSA1Lkyygi6MRCxSqBVpsCsa4z2h1LaMXWRZJetr3J7m1DKThXb+XKyOt5cBc6ZYSwsA2jU2iCnWqu3lMK1aK9aokRRcLdKyYtFSI1387y+VLn5B2soN26paptS5+ZwkOzIDU6B0tmhspVCxI17UNI0LKiFkZ4tixYp1JaUAt1kr9Oe+WPMmz9hzoJw9R2mXsDMAOD2p8xbdN4iCg0gUsIYQkqCgilhAKiL/BQFicqDQjagK0FTMSaKKMYYilngJYozYrACUBCiIHAYQi6QUcSqGUEDk0qg6H2hXZVN2bMcyoGxZpixbBnk0DdnUgGOQOkLBUi2ompM2chxTsATZUg2JVFe2yUlIsrFgc3LVwshWq9gUbBmbEaU4kPSQsiQb5BEapE/EDiGRBdORKIw9aRkCtpEFBQlJFEYlyafNSXTiDNmyZAuyYGNHkwSCbQsWlnkZQTui7ZqaLRsyckzDwBoxi4FM27YxdEQk8cAhfqMRSmAhyyaMEKmAcFUlWSLVFQ1NcyB2DGJZyzBsDQkalqFtSGZEmTSXkg1bMk3iXWjStk1IOn3HQBZB5IFsyTLGti1VVU2wECfZtmxhQ5VslRBqVQZv2ZbMI1PSyH0wyXuphC6qTFojN18hBFBU6OYx9qNfGk8ORTpsJq/wnMhDjqRjJNxxHKdxPFA0BZNHVqq5p5LURuE4UdTI61y0m4JjxYoVK1asWLFixYoVK1asWFdC/wOcUPRCT7ZE9QAAAABJRU5ErkJggg=="
                     width="450" height="350">
-                    <div class="text100">제 MBTI는 ISTJ로
-                        청렴결백한 논리주의자, 현실주의자의 성향을 띄고 있습니다.</div>
+                    <div class="text100">제 MBTI는 ISTJ로 청렴결백한 논리주의자, 현실주의자의 성향을 띄고 있습니다.
+                        돌발 상황을 좋아하지 않고, 다른 사람에 대한 관심도가 낮은 편으로
+                    </div>
                 </div>
             </div>
         </div>
